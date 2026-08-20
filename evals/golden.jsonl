@@ -1,0 +1,25 @@
+{"question": "What is the Transformer architecture based on?", "expected_answer": "The Transformer architecture is based on attention mechanisms, specifically self-attention.", "source_chunk_ids": [830018, 830062, 830011]}
+{"question": "What are the main components of the Transformer?", "expected_answer": "The Transformer consists of an encoder-decoder structure with multi-head attention layers and feed-forward networks.", "source_chunk_ids": [830062, 830018, 840028]}
+{"question": "What is self-attention in Transformers?", "expected_answer": "Self-attention allows each position in the sequence to attend to all other positions.", "source_chunk_ids": [830014, 830032, 830004]}
+{"question": "How does multi-head attention work?", "expected_answer": "Multi-head attention runs multiple attention operations in parallel.", "source_chunk_ids": [830014, 830030, 830098]}
+{"question": "What is the role of positional encoding?", "expected_answer": "Positional encoding adds information about the position of tokens in the sequence.", "source_chunk_ids": [830041, 830033, 830040]}
+{"question": "What is LLaMA?", "expected_answer": "LLaMA is a collection of foundation language models ranging from 7B to 65B parameters.", "source_chunk_ids": [840622, 840281, 840627]}
+{"question": "What are the key features of LLaMA 2?", "expected_answer": "LLaMA 2 improvements include better performance and longer context windows.", "source_chunk_ids": [840281, 840627, 840302]}
+{"question": "How was LLaMA trained?", "expected_answer": "LLaMA was trained using an autoregressive transformer-based approach on large text corpora.", "source_chunk_ids": [840566, 840626, 840628]}
+{"question": "What is Segment Anything (SAM)?", "expected_answer": "Segment Anything is a foundation model for image segmentation that can segment any object.", "source_chunk_ids": [840482, 840123, 830023]}
+{"question": "How does Segment Anything work?", "expected_answer": "SAM uses a vision transformer encoder and a mask decoder for segmentation.", "source_chunk_ids": [840483, 840482, 840477]}
+{"question": "What are the prompt types supported by SAM?", "expected_answer": "SAM supports interactive points, bounding boxes, and text descriptions.", "source_chunk_ids": [840454, 840460, 840268]}
+{"question": "What is the advantage of Transformers over RNNs?", "expected_answer": "Transformers allow parallel processing and better long-range dependencies.", "source_chunk_ids": [830004, 830016, 830018]}
+{"question": "How is attention computed in Transformers?", "expected_answer": "Attention is computed using scaled dot-product attention.", "source_chunk_ids": [830014, 830032, 830022]}
+{"question": "What is the feed-forward network in Transformers?", "expected_answer": "The feed-forward network consists of linear transformations with ReLU activation.", "source_chunk_ids": [830018, 830019, 830035]}
+{"question": "How does layer normalization work?", "expected_answer": "Layer normalization normalizes across features to stabilize training.", "source_chunk_ids": [830019, 830033, 830075]}
+{"question": "What is the purpose of dropout?", "expected_answer": "Dropout prevents overfitting by randomly deactivating neurons during training.", "source_chunk_ids": [830087, 830057, 830056]}
+{"question": "How does LLaMA compare to GPT-3?", "expected_answer": "LLaMA 7B can outperform GPT-3 in many benchmarks.", "source_chunk_ids": [840048, 840256, 840145]}
+{"question": "What are ethical considerations for LLMs?", "expected_answer": "Key considerations include bias, potential misuse, and environmental impact.", "source_chunk_ids": [840276, 840183, 840626]}
+{"question": "How is SAM different from traditional methods?", "expected_answer": "SAM generalizes to new tasks without task-specific training.", "source_chunk_ids": [840274, 840049, 840623]}
+{"question": "What is zero-shot segmentation?", "expected_answer": "Zero-shot segmentation refers to segmenting without prior training on specific classes.", "source_chunk_ids": [840447, 840417, 840275]}
+{"question": "How was SAM evaluated?", "expected_answer": "SAM was evaluated on diverse segmentation benchmarks.", "source_chunk_ids": [840009, 840134, 840411]}
+{"question": "What is the computational complexity of Transformers?", "expected_answer": "Transformers have O(n^2) complexity due to all-pairs attention.", "source_chunk_ids": [830044, 830038, 830014]}
+{"question": "How are Transformers pre-trained?", "expected_answer": "Using masked language modeling or causal language modeling on large corpora.", "source_chunk_ids": [840382, 840011, 830055]}
+{"question": "What is fine-tuning in Transformers?", "expected_answer": "Adapting a pre-trained model to downstream tasks with small learning rates.", "source_chunk_ids": [830062, 830055, 840293]}
+{"question": "What makes Transformers effective for NLP?", "expected_answer": "Their ability to parallelize and capture long-range dependencies makes them effective.", "source_chunk_ids": [840367, 830070, 830062]}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise RAG Platform</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-dot" id="health-dot" title="API health"></span>
+        Enterprise RAG Platform
+      </div>
+      <div class="user-controls">
+        <select id="user-select">
+          <option value="user_a">User A (public docs)</option>
+          <option value="user_b">User B (public + private docs)</option>
+          <option value="custom">Custom token&hellip;</option>
+        </select>
+        <input id="custom-token" type="password" placeholder="Bearer token" class="hidden" />
+      </div>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="chat">Chat</button>
+      <button class="tab-btn" data-tab="upload">Upload Documents</button>
+    </nav>
+
+    <main>
+      <section id="tab-chat" class="tab-panel active">
+        <div id="messages" class="messages"></div>
+        <form id="chat-form" class="chat-form">
+          <input id="chat-input" type="text" placeholder="Ask a question about the ingested documents&hellip;" autocomplete="off" required />
+          <button type="submit" id="chat-send">Ask</button>
+        </form>
+        <details class="advanced">
+          <summary>Advanced</summary>
+          <label>Chunks retrieved (limit)
+            <input id="opt-limit" type="number" min="1" max="20" value="8" />
+          </label>
+          <label>Max answer tokens (blank = unlimited)
+            <input id="opt-max-tokens" type="number" min="1" placeholder="unlimited" />
+          </label>
+        </details>
+      </section>
+
+      <section id="tab-upload" class="tab-panel">
+        <form id="upload-form" class="upload-form">
+          <label class="dropzone" id="dropzone">
+            <input id="file-input" type="file" accept="application/pdf" required />
+            <span id="dropzone-label">Drop a PDF here, or click to choose a file</span>
+          </label>
+          <label>Access group
+            <input id="acl-group" type="text" list="acl-options" value="public" required />
+            <datalist id="acl-options">
+              <option value="public"></option>
+              <option value="private"></option>
+            </datalist>
+          </label>
+          <button type="submit" id="upload-submit">Upload &amp; Ingest</button>
+        </form>
+        <div id="upload-status" class="upload-status"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+.venv/
+venv/
+*.egg-info/
+.env
+.claude/
+.DS_Store
+data/pdfs/*.pdf
